@@ -1,0 +1,11 @@
+{
+  "classes": [
+    "psyllid",
+    "non-target"
+  ],
+  "best_acc": 0.9769673704414588,
+  "n_train": 5981,
+  "n_test": 1563,
+  "conf_high": 0.7,
+  "conf_low": 0.3
+}
