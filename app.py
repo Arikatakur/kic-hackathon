@@ -111,10 +111,33 @@ st.markdown("""
   [data-testid="stSidebar"]          { background: #111411; border-right: 1px solid #1e2b1e; }
   [data-testid="stSidebarContent"]   { padding: 1.5rem 1rem; }
 
-  /* hide only the footer and deploy button, leave header/toggle alone */
-  footer                       { visibility: hidden; }
-  [data-testid="stDecoration"] { display: none; }
-  [data-testid="stToolbar"]    { display: none !important; }
+  /* hide default streamlit chrome */
+  footer                              { visibility: hidden; }
+  [data-testid="stDecoration"]        { display: none; }
+  [data-testid="stAppDeployButton"]   { display: none !important; }
+  [data-testid="stMainMenu"]          { display: none !important; }
+  [data-testid="stToolbarActions"]    { display: none !important; }
+
+  /* style header to match sidebar */
+  [data-testid="stHeader"] {
+    background: #111411 !important;
+    border-bottom: 1px solid #1e2b1e;
+    height: 3.5rem !important;
+    min-height: 3.5rem !important;
+  }
+  [data-testid="stToolbar"] {
+    height: 3.5rem !important;
+    min-height: 3.5rem !important;
+    padding: 0 1rem !important;
+  }
+  [data-testid="stExpandSidebarButton"] svg,
+  [data-testid="stExpandSidebarButton"] span {
+    color: #7a9a7a !important;
+  }
+  [data-testid="stExpandSidebarButton"]:hover svg,
+  [data-testid="stExpandSidebarButton"]:hover span {
+    color: #dce8dc !important;
+  }
 
   /* headings */
   h1, h2, h3, h4, h5 { color: #dce8dc !important; font-weight: 600; letter-spacing: -0.02em; }
